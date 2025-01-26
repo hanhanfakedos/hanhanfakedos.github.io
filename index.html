@@ -16,16 +16,8 @@
   </p>
   <p>Minecraft-DOS news</p>
   <script>
-    function createListFromJson(jsonArray) {
-      const listContainer = document.getElementById('versionList');
-      jsonArray.forEach(item => {
-        const listItem = document.createElement('li');
-        listItem.textContent = `${item.title}, ${item.date}, ${item.text}`;
-        listContainer.appendChild(listItem);
-      });
-    }
-     $.getJSON('./news.json',function(data) {
-       createListFromJson(data.mcdosnews);
+     $.getJSON('./news.json',function(json) {
+       for(var i=0,l=json.mcdosnews.length;i<l;i++){ for(var key in json.mcdosnews[i]){ alert(key+':'+json.mcdosnews[i][key]); } }
      });
   </script>
 </body>
