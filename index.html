@@ -13,4 +13,17 @@
     Support Forge,Fabric,Quilt Mod Loaders,and authlib-injector,microsoft sign in.<br />
     Need Python only:)
   </p>
+  <p>Minecraft-DOS news</p>
+  <script id="json-data" type="application/json" src="news.json"></script>
+  <script>
+    function createListFromJson(jsonArray) {
+      const listContainer = document.getElementById('versionList');
+      jsonArray.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.title}, ${item.date}, ${item.text}`;
+        listContainer.appendChild(listItem);
+      });
+    }
+    createListFromJson(json-data.mcdosnews);
+  </script>
 </body>
