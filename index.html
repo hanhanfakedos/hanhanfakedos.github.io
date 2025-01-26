@@ -15,9 +15,10 @@
     Need Python only:)
   </p>
   <p>Minecraft-DOS news</p>
+  <div id="news"></div>
   <script>
      $.getJSON('./news.json',function(json) {
-       for(var i=0,l=json.mcdosnews.length;i<l;i++){ for(var key in json.mcdosnews[i]){ document.write(key+':'+json.mcdosnews[i][key]); } }
+       for(var i=0,l=json.mcdosnews.length;i<l;i++){ for(var key in json.mcdosnews[i]){ document.getElementById("news").innerHTML =('<p>'+ json.mcdosnews[i][key] '<br />' + '</p>'); } }
      });
   </script>
 </body>
