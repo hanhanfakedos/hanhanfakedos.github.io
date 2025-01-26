@@ -18,7 +18,7 @@
   <div id="news"></div>
   <script>
      $.getJSON('./news.json',function(json) {
-       for(var i=0,l=json.mcdosnews.length;i<l;i++){ for(var key in json.mcdosnews[i]){ document.getElementById("news").innerHTML =('<p>'+ json.mcdosnews[i][key] '<br />' + '</p>'); } }
+       for(var i=0,l=json.mcdosnews.length;i<l;i++){ for(var key in json.mcdosnews[i]){ document.getElementById("news").innerHTML =('<p>'+ json.mcdosnews[i][key] + '<br />' + '</p>'); } }
      });
   </script>
 </body>
