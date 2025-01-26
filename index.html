@@ -17,7 +17,7 @@
   <p>Minecraft-DOS news</p>
   <script>
      $.getJSON('./news.json',function(json) {
-       for(var i=0,l=json.mcdosnews.length;i<l;i++){ for(var key in json.mcdosnews[i]){ console.log(key+':'+json.mcdosnews[i][key]); } }
+       for(var i=0,l=json.mcdosnews.length;i<l;i++){ for(var key in json.mcdosnews[i]){ document.write(key+':'+json.mcdosnews[i][key]); } }
      });
   </script>
 </body>
