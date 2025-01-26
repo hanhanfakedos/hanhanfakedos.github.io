@@ -14,9 +14,8 @@
     Need Python only:)
   </p>
   <p>Minecraft-DOS news</p>
-  <script id="json-data" type="application/json" src="news.json"></script>
   <script>
-    import json from "./news.json"
+    const jsona=require('./news.json');
     function createListFromJson(jsonArray) {
       const listContainer = document.getElementById('versionList');
       jsonArray.forEach(item => {
@@ -25,6 +24,6 @@
         listContainer.appendChild(listItem);
       });
     }
-    createListFromJson(json.mcdosnews);
+    createListFromJson(jsona.mcdosnews);
   </script>
 </body>
