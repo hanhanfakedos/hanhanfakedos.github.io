@@ -24,7 +24,7 @@
         listContainer.appendChild(listItem);
       });
     }
-     $getJSON('./news.json',function(data) {
+     $.getJSON('./news.json',function(data) {
        createListFromJson(data.mcdosnews);
      });
   </script>
