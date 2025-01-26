@@ -15,7 +15,7 @@
   </p>
   <p>Minecraft-DOS news</p>
   <script>
-    const jsona=require('./news.json');
+    import data from './news.json' assert { type: 'JSON' };
     function createListFromJson(jsonArray) {
       const listContainer = document.getElementById('versionList');
       jsonArray.forEach(item => {
@@ -24,6 +24,6 @@
         listContainer.appendChild(listItem);
       });
     }
-    createListFromJson(jsona.mcdosnews);
+    createListFromJson(data.mcdosnews);
   </script>
 </body>
