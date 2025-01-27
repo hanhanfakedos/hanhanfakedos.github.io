@@ -1,0 +1,21 @@
+{
+    "MCDOSSupportSystem":[
+        "Windows",
+        "Linux",
+        "MacOS"
+    ],
+    "File":{
+        "Windows":[
+            {
+                "version":"0.01Beta",
+                "type":"primary",
+                "path":"Win/MC.zip"
+            },
+            {
+                "version":"0.01Beta",
+                "type":"0Color",
+                "path":"Win/MC-0Color.zip"
+            }
+        ]
+    }
+}
