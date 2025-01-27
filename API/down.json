@@ -1,10 +1,10 @@
 {
-    "MCDOSSupportSystem":[
+    "support":[
         "Windows",
         "Linux",
         "MacOS"
     ],
-    "File":{
+    "file":{
         "Windows":[
             {
                 "version":"0.01Beta",
