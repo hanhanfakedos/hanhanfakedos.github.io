@@ -1,7 +1,7 @@
 {
     "support":[
         "Windows",
-        "Linux",
+        "Linuxs",
         "MacOS"
     ],
     "file":{
@@ -12,10 +12,28 @@
                     {
                         "type":"primary",
                         "path":"Win/MC.zip"
-                    },
+                    }
+                ]
+            }
+        ],
+        "Linuxs":[
+            {
+                "version":"0.01Beta",
+                "path":[
                     {
-                        "type":"0Color",
-                        "path":"Win/MC-0Color.zip"
+                        "type":"primary",
+                        "path":"Lnx/MC.tar.gz"
+                    }
+                ]
+            }
+        ],
+        "MacOS":[
+            {
+                "version":"0.01Beta",
+                "path":[
+                    {
+                        "type":"primary",
+                        "path":"Mac/MC.tar"
                     }
                 ]
             }
