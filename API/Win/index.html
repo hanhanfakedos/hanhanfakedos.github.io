@@ -6,10 +6,46 @@
     <style>
         body {
             background-color: #f0f0f0; /* Change background color */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
         }
         ::selection {
             background: #ffb7b7; /* Change text selection background color */
             color: #000; /* Change text selection color */
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        tbody {
+            animation: fadeIn 1s ease-in-out;
         }
     </style>
 </head>
@@ -22,13 +58,11 @@
         <tr>
             <td data-value="..">
                 <a href="/API/">..</a>
-                <p>--</p>
             </td>
         </tr>
         <tr>
             <td data-value="MC">
                 <a href="MC.zip">MC.zip</a>
-                <p>------</p>
             </td>
         </tr>
     </tbody>
